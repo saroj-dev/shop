@@ -300,13 +300,13 @@ color: rgba(0,0,0,0.5);
       background-position: center;
   }
 .f-slide-1{
-    background-image: url(slider1.jpg);
+    background-image: url(../img/slider1.jpg);
 }
 .f-slide-2{
-    background-image: url(slider3.jpg);
+    background-image: url(../img/slider3.jpg);
 }
 .f-slide-3{
-    background-image: url(slider4.jpg);
+    background-image: url(../img/slider4.jpg);
 }
 .slider-text-container,
 .banner-text-container{
