@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/shop.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" ></script>
+
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+        <label class="logo">Shopping</label>
+        <ul>
+            <li><a class="active" href="../index.html"> Home</a></li>
+            <li><a href="n.html"> Man</a></li>
+            <li><a href="n1.html"> Women</a></li>
+            <li><a href="shop.html"> Shop</a></li>
+        </ul>
+    </nav>
+    <div class="product-container">
+		<div class="product-box">
+			<div class="product-img">
+				<a href="#" class="add-cart">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+			<img src="./img/b1.jpg" />
+		</div>
+		<div class="product-details">
+			<a href="#" class="p-name">Drawstring T-shirt</a>
+			<span class="p-price">Rs 400</span>
+		</div>
+		</div>
+        <div class="product-box">
+			<div class="product-img">
+				<a href="#" class="add-cart">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+			<img src="./img/b2.jpg" />
+		</div>
+		<div class="product-details">
+			<a href="#" class="p-name">Drawstring T-shirt</a>
+			<span class="p-price">Rs 400</span>
+		</div>
+		</div>
+        <div class="product-box">
+			<div class="product-img">
+				<a href="#" class="add-cart">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+			<img src="./img/b8.jpg" />
+		</div>
+		<div class="product-details">
+			<a href="#" class="p-name">Drawstring T-shirt</a>
+			<span class="p-price">Rs 400</span>
+		</div>
+		</div>
+        <div class="product-box">
+			<div class="product-img">
+				<a href="#" class="add-cart">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+			<img src="./img/g1.jpg" />
+		</div>
+		<div class="product-details">
+			<a href="#" class="p-name">Drawstring T-shirt</a>
+			<span class="p-price">Rs 400</span>
+		</div>
+		</div>
+        <div class="product-box">
+			<div class="product-img">
+				<a href="#" class="add-cart">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+			<img src="./img/g2.jpg" />
+		</div>
+		<div class="product-details">
+			<a href="#" class="p-name">Drawstring T-shirt</a>
+			<span class="p-price">Rs 400</span>
+		</div>
+		</div>
+        <div class="product-box">
+			<div class="product-img">
+				<a href="#" class="add-cart">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+			<img src="./img/g3.jpg" />
+		</div>
+		<div class="product-details">
+			<a href="#" class="p-name">Drawstring T-shirt</a>
+			<span class="p-price">Rs 400</span>
+		</div>
+		</div>
+        </div>
+        <div class="form">
+            <div class="login-form">
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            
+            <strong>Conformation</strong>
+            <form>
+            <strong>Do want to shop ?</strong>
+            </form>
+            <div class="form-btns">
+            <a href="javascript:void(0);" class="forget">No</a>
+            <a href="javascript:void(0);" class="sign-up-btn">Yes</a>
+            </div>
+            </div>
+            <div class="sign-up-form">
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+                
+                <strong>Sign Up</strong>
+                <form>
+                    <input type="text" placeholder="Full name " name="fullname" required>
+                    <input type="email" placeholder="@gmail.com" name="Email" required>
+                    <input type="password" placeholder="Password?" name="Password" required>
+                    <input type="submit" value="Sign Up" class="submit">
+                </form>
+                <div class="form-btns">
+                <a href="javascript:void(0);" class="Already-account">Already have Account ?</a>
+                </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+            $(document).on('click','.add-cart,.Already-account',function(){
+		$('.form').addClass('login-active').removeClass('sign-up-active')
+	});
+	$(document).on('click','.sign-up-btn',function(){
+		$('.form').addClass('sign-up-active').removeClass('login-active')
+	});
+	$(document).on('click','.form-cancel,.forget',function(){
+		$('.form').removeClass('login-active').removeClass('sign-up-active')
+	});
+    $(document).on('click','.submit',function()
+    {
+      
+    });
+            </script>
+</body>
+</html>
