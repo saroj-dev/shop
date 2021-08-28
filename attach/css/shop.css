@@ -27,6 +27,7 @@ label.logo
 nav ul{
     float: right;
     margin-right: 20px;
+    z-index: 1; /*to bring the nav ul at the top of other elements*/
 }
 nav ul li{
     display: inline-block;
